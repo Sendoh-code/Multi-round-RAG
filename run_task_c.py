@@ -57,7 +57,7 @@ def runC(memory=None,conv_id=None,task=None,llm=None):
     output_path = Path(args.output_path)
 
     with open(output_path, "a", encoding="utf-8") as fout:
-        
+        # last query
         query_text = task.get("last_user_query", "")
         docs = retriever.retrieve(query_text)
         prompt = (build_taskC_prompt(task,docs)+ '\n\n' +
