@@ -15,7 +15,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 TASK_A_PREDICTIONS = OUTPUT_DIR / "taskA_predictions.jsonl"
 TASK_C_PREDICTIONS = OUTPUT_DIR / "taskC_predictions.jsonl"
 # model
-DEFAULT_MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"  # 或你喜欢的别的 instruct 模型
+DEFAULT_MODEL_NAME = "Qwen/Qwen2-7B-Instruct"  # 或你喜欢的别的 instruct 模型
 MAX_NEW_TOKENS = 256
 TEMPERATURE = 0.2
 TOP_P = 0.9
